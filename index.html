@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Playable Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>PLAYABLE PIANO</h2>
+        <div class="column volume-slider">
+          <span>Volume</span>
+          <input type="range" min="0" max="1" value="0.5" step="any">
+        </div>
+        <div class="column keys-checkbox">
+          <span>Show Keys</span><input type="checkbox" checked>
+        </div>
+      </header>
+      <div class="piano-keys">
+
+         <!-- White-keys -->
+         <div  class="white-key key" data-key="0"><span>do</span></div >
+         <div  class="white-key key" data-key="1"><span>re</span></div >
+         <div  class="white-key key" data-key="2"><span>mi</span></div >
+         <div  class="white-key key" data-key="3"><span>fa</span></div >
+         <div  class="white-key key" data-key="4"><span>sol</span></div >
+         <div  class="white-key key" data-key="5"><span>la</span></div >
+         <div  class="white-key key" data-key="6"><span>si</span></div >
+         <div  class="white-key key" data-key="7"><span>do</span></div >
+         <div  class="white-key key" data-key="8"><span>re</span></div >
+         <div  class="white-key key" data-key="9"><span>mi</span></div >
+         <div  class="white-key key" data-key="10"><span>fa</span></div >
+         <div  class="white-key key" data-key="11"><span>sol</span></div >
+         <div  class="white-key key" data-key="12"><span>la</span></div >
+         <div  class="white-key key" data-key="13"><span>si</span></div >
+       
+
+
+         <!-- Black keys -->
+         <div  class="black-key key black-1" data-key="0b"><span>do#</span></div >
+         <div  class="black-key key black-2" data-key="1b"><span>re#</span></div >
+         <div  class="black-key key black-4" data-key="2b"><span>fa#</span></div >
+         <div  class="black-key key black-5" data-key="3b"><span>sol#</span></div >
+         <div  class="black-key key black-6" data-key="4b"><span>la#</span></div >
+         <div  class="black-key key black-8" data-key="5b"><span>do#</span></div >
+         <div  class="black-key key black-9" data-key="6b"><span>re#</span></div >
+         <div  class="black-key key black-11" data-key="7b"><span>fa#</span></div >
+         <div  class="black-key key black-12" data-key="8b"><span>sol#</span></div >
+         <div  class="black-key key black-13" data-key="9b"><span>la#</span></div >
+         </div>
+      
+    </div>
+
+  </body>
+</html>

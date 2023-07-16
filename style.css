@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almendra', sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ddecf2;
+  }
+  .wrapper {
+    
+    padding: 35px 40px;
+    border-radius: 20px;
+    background: #141414;
+  }
+  .wrapper header {
+    display: flex;
+    color: #ff9696;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h2 {
+    font-size: 1.6rem;
+  }
+  header .column {
+    display: flex;
+    align-items: center;
+    border-radius: 5px 25px 25px 5px;
+    
+  }
+  
+  header span {
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.19rem;
+  }
+  header input {
+    outline: none;
+    border-radius: 30px;
+  }
+  .volume-slider input {
+    accent-color: #feb8b8;
+  }
+  .keys-checkbox input {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    background: #feb8b8;
+  }
+  .keys-checkbox input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .keys-checkbox input:checked::before {
+    left: 35px;
+    background: #fff;
+  }
+  .piano-keys {
+    display: flex;
+    width: 900px;
+    height: 37vh;
+    border: 10px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 3rem;
+    position: relative;
+    list-style: none;
+  }
+  
+  .piano-keys .key span {
+    position: absolute;
+    bottom: 75px;
+    width: 5%;
+    color: #000000;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  .piano-keys .key.hide span {
+    display: none;
+  }
+  .piano-keys .black-key span {
+    bottom: 10px;
+    color: #ffffff;
+    left: 2px;
+  }
+  
+  .key {
+    width: 100px;
+    height: 12rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .white-key {
+    border: 0.01px solid black;
+    background-color: #fff;
+    transition: 0.01s all;
+  }
+  
+  .white-active,
+  .white-key:hover {
+    background-color: rgb(244, 86, 105);
+    border-bottom: none;
+    
+  }
+  
+  .black-key {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    z-index: 1;
+    height: 7.1rem;
+    width: 1.8rem;
+    position: absolute;
+    transition: 0.01s all;
+  }
+  
+  .black-1 {
+    left: 63px;
+  }
+  
+  .black-2 {
+    left: 125px;
+  }
+  
+  .black-4 {
+    left: 249px;
+  }
+  
+  .black-5 {
+    left: 311px;
+  }
+  .black-6 {
+    left: 373px;
+  }
+  
+  .black-8 {
+    left: 497px;
+  }
+  .black-9 {
+    left: 558px;
+  }
+  
+  .black-11 {
+    left: 683px;
+  }
+  
+  .black-12 {
+    left: 747px;
+  }
+  
+  .black-13 {
+    left: 808px;
+  }
+  
+  .black-key:hover {
+    background: rgb(248, 47, 181);
+  
+  
+  }
+  
+  .black-key:active {
+    background: rgb(255, 0, 255);
+  }
+  
+  
+  @media screen and (max-width: 1075px) {
+    .wrapper {
+      padding: 10px;
+      margin-left: 200px;
+      width: 780px;
+      
+    }
+    header {
+      flex-direction: column;
+    }
+    header :where(h2, .column) {
+      margin-bottom: 13px;
+    }
+    .volume-slider input {
+      max-width: 100px;
+    }
+  
+  .piano-keys {
+    margin-top: 15px;
+    
+  }
+ 
+  .piano-keys .black-key {
+    height: 100px;
+    width: 30px;
+    
+  }
+
+  .black-1 {
+    left: 50px;
+  }
+  
+  .black-2 {
+    left: 100px;
+  }
+  
+  .black-4 {
+    left: 200px;
+  }
+  
+  .black-5 {
+    left: 250px;
+  }
+  .black-6 {
+    left: 300px;
+  }
+  
+  .black-8 {
+    left: 400px;
+  }
+  .black-9 {
+    left: 451px;
+  }
+  
+  .black-11 {
+    left: 552px;
+  }
+  
+  .black-12 {
+    left: 600px;
+  }
+  
+  .black-13 {
+    left: 652px;
+  }
+
+  .piano-keys .white-key {
+    height: 180px;
+    width: 50px;
+  }
+
+
+}
+  
+  @media screen and (max-width: 570px) {
+    
+    .piano-keys .key:nth-child(11),
+    .piano-keys .key:nth-child(12),
+    .piano-keys .key:nth-child(13),
+    .piano-keys .key:nth-child(14),
+    .piano-keys .key:nth-child(23),
+    .piano-keys .key:nth-child(24),
+    .piano-keys .key:nth-child(25),
+    .piano-keys .key:nth-child(22)
+ {
+      display: none;
+    }
+    .piano-keys .white-key {
+      width: 50px;
+    }
+
+    .wrapper {
+      width: 550px;
+    }
+
+    .piano-keys .black-key span {
+      bottom: 15px;
+    }  
+  } 
